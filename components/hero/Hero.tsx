@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
+
+// Components
 import Header from "../Header";
 
 const Hero = () => {
@@ -13,10 +15,10 @@ const Hero = () => {
 
       <section className="relative py-12 sm:py-16 lg:py-20 lg:pb-36">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="grid max-w-lg grid-cols-1 mx-auto lg:max-w-full lg:items-center lg:grid-cols-2 gap-y-12 lg:gap-x-8">
+          <div className="grid grid-cols-1 mx-auto lg:max-w-full lg:items-center lg:grid-cols-2 gap-y-12 lg:gap-x-8">
             <div>
               <div className="text-center lg:text-left">
-                <h1 className="text-4xl font-bold leading-tight text-gray-900 sm:text-5xl sm:leading-tight lg:leading-tight lg:text-6xl font-pj">
+                <h1 className="text-4xl font-bold leading-tight text-gray-900 sm:text-5xl sm:leading-tight lg:leading-tight lg:text-6xl">
                   A special credit card made for Developers.
                 </h1>
                 <p className="mt-2 text-lg text-gray-600 sm:mt-8 font-inter">
@@ -37,7 +39,7 @@ const Hero = () => {
                     <div className="mt-4 sm:mt-0 sm:absolute sm:inset-y-0 sm:right-0 sm:flex sm:items-center sm:pr-2">
                       <button
                         type="submit"
-                        className="inline-flex px-6 py-3 text-lg font-bold text-white transition-all duration-200 bg-gray-900 rounded-lg focus:outline-none focus:bg-gray-600 font-pj hover:bg-gray-600"
+                        className="inline-flex px-6 py-3 text-lg font-bold text-white transition-all duration-200 bg-gray-900 rounded-lg focus:outline-none focus:bg-gray-600 hover:bg-gray-600"
                       >
                         Get Free Card
                       </button>
@@ -48,10 +50,10 @@ const Hero = () => {
 
               <div className="flex items-center justify-center mt-10 space-x-6 lg:justify-start sm:space-x-8">
                 <div className="flex items-center">
-                  <p className="text-3xl font-medium text-gray-900 sm:text-4xl font-pj">
+                  <p className="text-3xl font-medium text-gray-900 sm:text-4xl">
                     2943
                   </p>
-                  <p className="ml-3 text-sm text-gray-900 font-pj">
+                  <p className="ml-3 text-sm text-gray-900">
                     Cards
                     <br />
                     Delivered
@@ -63,10 +65,10 @@ const Hero = () => {
                 </div>
 
                 <div className="flex items-center">
-                  <p className="text-3xl font-medium text-gray-900 sm:text-4xl font-pj">
+                  <p className="text-3xl font-medium text-gray-900 sm:text-4xl">
                     $1M+
                   </p>
-                  <p className="ml-3 text-sm text-gray-900 font-pj">
+                  <p className="ml-3 text-sm text-gray-900">
                     Transaction
                     <br />
                     Completed
