@@ -5,6 +5,7 @@ import React, { useState } from "react";
 // Components
 import Header from "../Header";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const hiddenMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 30px, rgba(0,0,0,1) 30px, rgba(0,0,0,1) 30px)`;
 const visibleMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 0px, rgba(0,0,0,1) 0px, rgba(0,0,0,1) 30px)`;
@@ -96,11 +97,14 @@ const Hero = () => {
               onViewportLeave={() => setIsInView(false)}
             >
               {isInView && (
-                <img
+                <Image
                   className="w-full"
-                  src="/cards.png"
+                  src="/cards-sm.png"
                   alt=""
                   onLoad={() => setIsLoaded(true)}
+                  layout="responsive"
+                  width={638}
+                  height={563}
                 />
               )}
             </motion.div>
