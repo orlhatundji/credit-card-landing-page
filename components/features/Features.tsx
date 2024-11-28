@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import React from "react";
 
@@ -48,7 +49,14 @@ const items = [
 
 const Features = () => {
   return (
-    <section className="py-12 bg-white sm:py-16 lg:py-20">
+    <section className="relative py-12 bg-white sm:py-16 lg:py-20">
+      <div className="absolute bottom-0 right-0 overflow-hidden lg:inset-y-0">
+        <img
+          className="w-auto h-full rotate-180 opacity-25"
+          src="/background-pattern.png"
+          alt=""
+        />
+      </div>
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="text-center flex flex-col items-center">
           <h2 className="text-3xl max-w-2xl font-bold leading-tight text-gray-900 sm:text-4xl xl:text-5xl xl:leading-normal">

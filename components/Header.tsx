@@ -17,7 +17,7 @@ const Header = () => {
             >
               <Image
                 aria-hidden
-                src="/rareblocks.svg"
+                src="/kardnode.svg"
                 alt="Window icon"
                 width={148}
                 height={30}
@@ -61,7 +61,7 @@ const Header = () => {
               className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
             >
               {" "}
-              About Rareblocks{" "}
+              About Kardnode{" "}
             </a>
           </div>
 
