@@ -1,10 +1,17 @@
+"use client";
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
+import React, { useState } from "react";
 
 // Components
 import Header from "../Header";
+import { motion } from "framer-motion";
+
+const hiddenMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 30px, rgba(0,0,0,1) 30px, rgba(0,0,0,1) 30px)`;
+const visibleMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 0px, rgba(0,0,0,1) 0px, rgba(0,0,0,1) 30px)`;
 
 const Hero = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [isInView, setIsInView] = useState(false);
   return (
     <div className="relative bg-gray-50">
       <div className="absolute bottom-0 right-0 overflow-hidden lg:inset-y-0">
@@ -76,10 +83,27 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-
-            <div>
-              <img className="w-full" src="/cards.svg" alt="" />
-            </div>
+            <motion.div
+              initial={false}
+              animate={
+                isLoaded && isInView
+                  ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
+                  : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
+              }
+              transition={{ duration: 1, delay: 0 }}
+              viewport={{ once: false }}
+              onViewportEnter={() => setIsInView(true)}
+              onViewportLeave={() => setIsInView(false)}
+            >
+              {isInView && (
+                <img
+                  className="w-full"
+                  src="/cards.png"
+                  alt=""
+                  onLoad={() => setIsLoaded(true)}
+                />
+              )}
+            </motion.div>
           </div>
         </div>
       </section>
