@@ -70,11 +70,11 @@ const Features = () => {
 
         <div className="grid grid-cols-1 mt-10 text-center sm:mt-16 sm:grid-cols-2 sm:gap-x-12 gap-y-12 md:grid-cols-3 md:gap-0 xl:mt-24">
           {items.map((item, index) => (
-            <div key={index} className={`md:p-8 lg:p-14 ${item.extra_class}`}>
+            <div key={index} className={`md:p-8 lg:p-14 hover:shadow duration-1000 z-50 group ${item.extra_class}`}>
               <Image
                 src={item.icon}
                 alt=""
-                className="mx-auto"
+                className="mx-auto group-hover:scale-125 transition-all duration-500"
                 width={46}
                 height={46}
               />

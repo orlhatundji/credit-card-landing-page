@@ -3,7 +3,7 @@ import React from "react";
 
 const Brands = () => {
   return (
-    <section className="py-12 bg-white sm:py-16 lg:py-20 w-full">
+    <section className="py-12 bg-gradient-to-r from-white via-gray-50 to-white sm:py-16 lg:py-20 w-full">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="xl:flex xl:items-center xl:justify-between">
           <h2 className="text-xl font-bold text-center text-gray-400 xl:text-left font-pj">

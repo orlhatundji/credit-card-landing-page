@@ -1,5 +1,5 @@
 import React from "react";
-import PricingCard from "./pricing/PricingCard";
+import PricingCard from "./PricingCard";
 
 const Pricing = () => {
   const plans = [

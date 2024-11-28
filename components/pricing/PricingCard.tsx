@@ -17,7 +17,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
   buttonLabel,
 }) => {
   return (
-    <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-700 bg-white rounded-lg border border-gray-200 shadow hover:shadow-2xl hover:scale-105 hover:cursor-grab">
+    <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-700 bg-white rounded-lg border border-gray-200 shadow hover:shadow-2xl hover:scale-105 hover:cursor-grab duration-500">
       <h3 className="mb-4 text-2xl font-semibold text-gray-800">{title}</h3>
       <p className="font-light text-gray-600 sm:text-lg">{description}</p>
       <div className="flex justify-center items-baseline my-8">
